@@ -1,0 +1,178 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 28 mar 2022, 10:13:05
+    Author     : nicos
+*/
+
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: right;
+}
+/* regole di visualizzazione che riguardano i vari buttons */
+input {
+  display: inline-block;
+  float: left;
+  margin-left: 5px;
+}
+input[type="submit"] {
+  text-align: center;
+}
+body{
+    background-color: #fffeef;
+}
+
+
+/* regole di visualizzazione che riguardano i vari titoli */
+
+h1{
+    color: white;
+    font-size: 60px;
+    display: block;
+}
+
+h2{
+    color: #003962;
+    font: 25px/40px Arial, Helvetica, sans-serif;
+}
+/* regole di visualizzazione che riguardano l'header */
+
+header{
+    text-align: center;
+    background-color: #003962;    
+    padding-bottom: 200px;
+    padding-right: 0px; 
+}
+
+/* regole di visualizzazione che riguardano il menu di navigazione */
+
+nav {
+    background-color: #ffe240;
+    position: sticky;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0, .2);
+    margin-top: 5px;
+    top: 5px;
+}
+
+nav ul, nav li{
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* regole di visualizzazione che riguardano le porzioni di testo che reindirizzano
+ad un altra pagina*/
+a:link{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* regole di visualizzazione che riguardano l'article */
+
+article.news{
+    box-shadow: 0 0 10px rgba(0,0,0,2);
+    padding: 5px;
+    margin-top: 5px;
+}
+/* regole di visualizzazione che riguardano il login */
+
+#login{
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0,0,0, .2);
+    padding: 20px;
+    border-style: solid;
+    padding-top: 25px;
+    padding-left:25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    height: auto;
+}
+
+/* regole di visualizzazione che riguardano il mark nel menu di navigazione */
+
+mark {
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #7fffd4;
+    color: black;
+}
+
+
+#colonna_destra{
+   text-align: center;
+}
+
+/* regole di visualizzazione che riguardano il footer */
+
+footer{
+    background-color: #ffe240;
+    box-shadow: 0 0 10px rgba(0,0,0, .2);
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    top: 10px;
+    height: 60px;
+    text-align: center;
+}
+/* regole di visualizzazione che riguardano il menu di navigazione */
+
+nav li{
+    border-right: 2px solid #111111;
+}
+
+nav li:last-child{
+    border-right: 0px solid;
+}
+/* regole di visualizzazione che riguardano i vari box */
+
+userBox{
+        box-shadow: 0 0 10px rgba(0,0,0, .2);
+        
+}
+
+
+*{
+    box-sizing: border-box;
+}
+/* subito sotto sono rappresentate le 12 colonne utili per la divisione del 
+layout e sono presenti in tutto il codice con la classe "col-" servono anche 
+a distinguere la visualizzazione desktop da quella smartphone*/
+[class*="col-"]{
+        float: left;
+        padding: 5px;
+}
+@media only screen and (min-width: 760px){
+    
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+
+@media only screen and (max-width: 320px){
+    
+    nav li{
+        display: block;
+    }
+}
+
